@@ -7,7 +7,7 @@ export default function logUserIn(formValues) {
     // dispatch({type: 'CREATE_USER'})
 
     $.ajax({
-     url: `https://haven-rails-api.herokuapp.com/sessions`,
+     url: `https://haven-api-rails.herokuapp.com/sessions`,
      type: 'POST',
      data: JSON.stringify({auth: {email: formValues.email, password: formValues.password}}),
      dataType: 'json',

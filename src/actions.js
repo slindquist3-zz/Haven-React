@@ -8,7 +8,7 @@ export function createUser(formValues) {
     dispatch({type: 'CREATING_USER'})
 
     $.ajax({
-     url: 'https://haven-rails-api.herokuapp.com/users',
+     url: 'https://haven-api-rails.herokuapp.com/users',
      type: 'POST',
      data: JSON.stringify({auth: {name: formValues.name, email: formValues.email, password: formValues.password}}),
      dataType: 'json',
@@ -19,10 +19,4 @@ export function createUser(formValues) {
      browserHistory.push('/profile')
    })
   }
-}
-
-
-
-export function saveImage() {
-
 }

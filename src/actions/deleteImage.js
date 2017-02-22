@@ -3,7 +3,7 @@ import $ from 'jquery'
 export default function deleteImage(imageID, boardID){
   return function (dispatch) {
     $.ajax({
-     url: `https://haven-rails-api.herokuapp.com/images/${imageID}`,
+     url: `https://haven-api-rails.herokuapp.com/images/${imageID}`,
      type: 'DELETE',
      data: JSON.stringify({image: {board_id: boardID}}),
      dataType: 'json',
