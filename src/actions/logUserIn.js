@@ -7,11 +7,11 @@ export default function logUserIn(formValues) {
     // dispatch({type: 'CREATE_USER'})
 
     $.ajax({
-     url: `https://haven-api-rails.herokuapp.com/sessions`,
+     url: `https://cors-anywhere.herokuapp.com/https://haven-api-rails.herokuapp.com/sessions`,
      type: 'POST',
      data: JSON.stringify({auth: {email: formValues.email, password: formValues.password}}),
      dataType: 'json',
-     contentType: 'application/json; charset=utf-8'
+     contentType: 'text/plain; charset=utf-8'
    }).done(function(response){
      localStorage.setItem('jwt', response.jwt);
      dispatch({type: 'LOGIN_USER', currentUser: response.current_user})
