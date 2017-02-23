@@ -6,7 +6,7 @@ export default function createUser(formValues) {
     dispatch({type: 'CREATING_USER'})
 
     $.ajax({
-     url: 'https://cors-anywhere.herokuapp.com/https://haven-api-rails.herokuapp.com/users',
+     url: 'https://haven-api-rails.herokuapp.com/users',
      type: 'POST',
      data: JSON.stringify({auth: {name: formValues.name, email: formValues.email, password: formValues.password}}),
      dataType: 'json',

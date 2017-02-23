@@ -3,7 +3,7 @@ import $ from 'jquery'
 export default function updateName(name, currentUserID) {
   return function(dispatch) {
   $.ajax({
-     url: `https://cors-anywhere.herokuapp.com/https://haven-api-rails.herokuapp.com/users/${currentUserID}`,
+     url: `https://haven-api-rails.herokuapp.com/users/${currentUserID}`,
      type: 'PUT',
      data: { name: name, current_user_id: currentUserID },
     //  success: () => { return{type:"FETCH_BOARD", payload: board}}

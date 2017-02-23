@@ -5,14 +5,6 @@ import { Link } from 'react-router'
 
 class Nav extends Component {
 
-  navList(){
-    if (this.props.currentUser.loggedIn === true) {
-      return [{name: "Home", URI:"/"}, {name: "Profile", URI: "profile"}, {name: "Log Out", URI: "logout"}]
-    } else {
-      return [{name: "Home", URI: "/"}, {name:"Signup", URI:"signup"}]
-    }
-  }
-
   render(){
     let formattedLinks = this.navList().map((item)=>{
       return <li role="presentation"><Link to={item.URI} className="whiteText"> {item.name}</Link></li>
