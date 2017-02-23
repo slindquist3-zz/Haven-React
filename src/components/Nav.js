@@ -6,9 +6,6 @@ import { Link } from 'react-router'
 class Nav extends Component {
 
   render(){
-    let formattedLinks = this.navList().map((item)=>{
-      return <li role="presentation"><Link to={item.URI} className="whiteText"> {item.name}</Link></li>
-    })
     return(
             <nav className="navbar navbar-default">
               <div className="container-fluid">
