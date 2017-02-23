@@ -5,7 +5,7 @@ export default function postStatus(formValues){
   //formValues = {content: "hello world", user_board_id: 1}
   return function (dispatch) {
     $.ajax({
-     url: 'https://haven-api-rails.herokuapp.com/posts',
+     url: 'https://cors-anywhere.herokuapp.com/https://haven-api-rails.herokuapp.com/posts',
      type: 'POST',
      data: JSON.stringify({post: {content: formValues.content, user_board_id: formValues.userBoardID}}),
      dataType: 'json',
