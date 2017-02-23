@@ -9,6 +9,7 @@ export default function logUserIn(formValues) {
     $.ajax({
      url: `https://cors-anywhere.herokuapp.com/https://haven-api-rails.herokuapp.com/sessions`,
      type: 'POST',
+     beforeSend: function(xhr){xhr.setRequestHeader('X-Test-Header', 'test-value');},
      data: JSON.stringify({auth: {email: formValues.email, password: formValues.password}}),
      dataType: 'json',
      contentType: 'text/plain; charset=utf-8'
