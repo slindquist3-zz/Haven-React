@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-// import { boardRequest } from '../actions'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { Row, Col, FormGroup, FormControl, ControlLabel, HelpBlock, Button } from 'react-bootstrap'
@@ -61,14 +60,6 @@ class Board extends Component {
     let dropdownEdit = this.dropdown(this.props.editing);
     return (
     <div>
-      {/* <Row>
-        <Col lg={6} md={6} sm={6} xs={6}>
-        <Button bsSize="small" onClick={this.handleEditDropdown.bind(this)}>
-          <span className="glyphicon glyphicon-cog" aria-hidden="true" value="editing"></span>
-        </Button>
-        {dropdownEdit}
-        </Col>
-      </Row> */}
       <Row className="spaceBottomL">
         <Col lg={12} md={12} sm={12} xs={12}>
           <h1 className="text-center">{this.props.board.title}</h1>
