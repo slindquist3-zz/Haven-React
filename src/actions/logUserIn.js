@@ -11,7 +11,7 @@ export default function logUserIn(formValues) {
      type: 'POST',
      data: JSON.stringify({auth: {email: formValues.email, password: formValues.password}}),
      dataType: 'json',
-     contentType: 'text/plain; charset=utf-8'
+     contentType: 'application/json; charset=utf-8'
    }).done(function(response){
      localStorage.setItem('jwt', response.jwt);
      dispatch({type: 'LOGIN_USER', currentUser: response.current_user})
