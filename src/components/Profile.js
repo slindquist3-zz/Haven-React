@@ -92,7 +92,7 @@ class Profile extends Component {
     )
     }
   )
-  // let theseBoards = boards.slice(1, boards.length - 1)
+  let theseBoards = boards.slice(1, boards.length - 1)
 
 
 
@@ -123,17 +123,12 @@ class Profile extends Component {
 
           <strong><p className="spaceTopSM lesserHeadings">Your Boards</p></strong>
             <div>
-                {boards}
+                {theseBoards}
             </div>
         </Col>
       </Row>
     </div>)
   }
-
-  // user's name
-  // list of boards
-  // link each board to indv board
-
 }
 
 function mapStateToProps(state) {
