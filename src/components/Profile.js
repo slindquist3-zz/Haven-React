@@ -92,7 +92,7 @@ class Profile extends Component {
     )
     }
   )
-  let theseBoards = boards.slice(1, boards.length - 1)
+  // let theseBoards = boards.slice(1, boards.length - 1)
 
 
 
@@ -123,7 +123,7 @@ class Profile extends Component {
 
           <strong><p className="spaceTopSM lesserHeadings">Your Boards</p></strong>
             <div>
-                {theseBoards}
+                {boards}
             </div>
         </Col>
       </Row>
