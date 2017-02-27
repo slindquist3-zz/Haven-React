@@ -10,8 +10,8 @@ export default class About extends Component {
         <p className="logoWelcome">Haven</p>
         <Col className="col-md-8 col-md-offset-2">
           <h3 className="center"></h3>
-          <h3 className="center">Haven offers a quieter space for people to connect beyond algorithms and what's trending.</h3>
-          <h3 className ="center">Create a board with a family member/friend/colleague/partner and post content without being interrupted by ads and other internet noise.</h3>
+          <h3 className="center">Haven offers a quieter space for people to connect.</h3>
+          <h3 className ="center">Create a board with a family member/friend/colleague/partner and share content free from interruptions.</h3>
         </Col>
       </div>
 
