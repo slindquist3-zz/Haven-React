@@ -8,7 +8,7 @@ export default class About extends Component {
 
       <div>
         <p className="logoWelcome">Haven</p>
-        <Col className="col-md-8 col-md-offset-2">
+        <Col className="col-md-6 col-md-offset-2">
           <h3 className="center"></h3>
           <h3 className="center">Haven offers a quiet space.</h3>
           <h4 className="center"></h4>
