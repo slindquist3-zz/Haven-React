@@ -11,7 +11,7 @@ export default class About extends Component {
         <Col className="col-md-8 col-md-offset-2">
           <h3 className="center"></h3>
           <h3 className="center">Haven offers a quieter space for people to connect.</h3>
-          <h3 className ="center">Create a board with a family member/friend/colleague/partner and share content free from interruptions.</h3>
+          <h3 className ="center">Create and share content with a family member/friend/colleague/partner free from interruptions.</h3>
         </Col>
       </div>
 
