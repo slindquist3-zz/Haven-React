@@ -7,8 +7,8 @@ export default class About extends Component {
 
       <div>
         <p className="logoWelcome">Haven</p>
-        <p>Haven offers a quieter space for people to connect.
-          Create a board and post content free from ads and other internet noise.</p>
+        <h3 className="center">Haven offers a quieter space for people to connect.
+          Create a board and post content without being interrupted by ads and other internet noise.</h3>
       </div>
 
     )
