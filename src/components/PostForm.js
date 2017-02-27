@@ -33,7 +33,7 @@ class PostForm extends Component {
   }
 
   handleImageUpload(file) {
-  let upload = request.post(`https://haven-rails-api.herokuapp.com/images/new`)
+  let upload = request.post(`https://haven-api-rails.herokuapp.com/images/new`)
                       // .field('upload_preset', CLOUDINARY_UPLOAD_PRESET)
                       .field('file', file);
 
