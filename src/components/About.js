@@ -6,7 +6,9 @@ export default class About extends Component {
     return(
 
       <div>
-        This is the about page
+        <p className="logoWelcome">Haven</p>
+        <p>Haven offers a quieter space for people to connect.
+          Create a board and post content free from ads and other internet noise.</p>
       </div>
 
     )
