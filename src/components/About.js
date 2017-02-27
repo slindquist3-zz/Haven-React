@@ -11,7 +11,9 @@ export default class About extends Component {
         <Col className="col-md-8 col-md-offset-2">
           <h3 className="center"></h3>
           <h3 className="center">Haven offers a quieter space for people to connect.</h3>
-          <h3 className ="center">Create and share content free from interruptions.</h3>
+          <h4 className ="center"> Built with a minimalist approach to social media,
+            Haven is a platform to connect one-on-one with the people who matter most to you.
+            Create and share content free from ads, algorithms, and trends.</h4>
         </Col>
       </div>
 
