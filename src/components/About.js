@@ -13,7 +13,7 @@ export default class About extends Component {
           <h3 className="center"></h3>
           <h3 className ="center"> Built with a minimalist approach to social media,
             Haven offers a quiet space to connect one-on-one with the people who matter most to you.</h3>
-            <h3>Create and share content free from ads, algorithms, and trends.</h3>
+            <h3 className="center">Create and share content free from ads, algorithms, and trends.</h3>
         </Col>
       </div>
 
