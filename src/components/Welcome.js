@@ -30,8 +30,6 @@ class Welcome extends Component {
   }
   render(){
 
-    alert("To see this app as an active user, try logging in as kim@gmail.com, password: me")
-
     return(
       <div className="slide-up-page">
         <div>

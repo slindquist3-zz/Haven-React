@@ -7,6 +7,7 @@ import Login from './components/Login'
 import Logout from './components/Logout'
 import Board from './components/Board'
 import Welcome from './components/Welcome'
+import About from './components/About'
 
 
 
@@ -19,5 +20,6 @@ export default (
   <Route path="login" component={Login}/>
   <Route path="board" component={Board} />
   <Route path="logout" component={Logout} />
+  <Route path="about" component={About} />
  </ Route>
 );

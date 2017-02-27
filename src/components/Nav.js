@@ -13,7 +13,7 @@ class Nav extends Component {
                   <ul className="nav navbar-nav center">
                     <li><Link className="Roboto" href="/">HOME</Link></li>
                     <li><Link className="Roboto" href="/signup">SIGN UP</Link></li>
-                    <li><Link className="Roboto" href="/profile">PROFILE</Link></li>
+                    <li><Link className="Roboto" href="/about">ABOUT</Link></li>
                   </ul>
                 </div>
               </div>
