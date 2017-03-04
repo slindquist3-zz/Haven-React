@@ -29,7 +29,6 @@ class Login extends Component {
     <Row className="form-horizontal left">
         <form onSubmit={this.handleSubmit.bind(this)}>
           <FormGroup>
-            test
             {/* <ControlLabel className="whiteText">Email</ControlLabel> */}
             <FormControl
               className="input-lg"
