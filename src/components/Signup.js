@@ -46,7 +46,7 @@ class Signup extends Component {
               <FormControl className="center input-lg" type="password" placeholder="Choose a strong password." onChange={this.handlePasswordChange.bind(this)}/>
             </FormGroup>
             <FormGroup>
-              <Button className="spaceTopS signUpButton btn-default btn-lg btn-block" type="submit">Signup</Button>
+              <Button className="spaceTopS signUpButton btn-default btn-block" type="submit">Signup</Button>
             </FormGroup>
           </form>
         </div>
