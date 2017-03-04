@@ -29,6 +29,7 @@ class Login extends Component {
     <Row className="form-horizontal left">
         <form onSubmit={this.handleSubmit.bind(this)}>
           <FormGroup>
+            test
             {/* <ControlLabel className="whiteText">Email</ControlLabel> */}
             <FormControl
               className="input-lg"
@@ -47,7 +48,6 @@ class Login extends Component {
           <FormGroup>
             <Row>
             <Button className="loginButton btn btn-default btn-block" type="submit">Enter</Button>
-
 
             </Row>
           </FormGroup>
