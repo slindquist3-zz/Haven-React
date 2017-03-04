@@ -45,10 +45,7 @@ class Login extends Component {
               onChange={this.handlePasswordChange.bind(this)}/>
           </FormGroup>
           <FormGroup>
-            <Row>
-            <Button className="loginButton btn btn-default btn-block" type="submit">Enter</Button>
-
-            </Row>
+            <Button className="loginButton btn btn-default btn-lg btn-block" type="submit">Enter</Button>
           </FormGroup>
       </form>
     </Row>

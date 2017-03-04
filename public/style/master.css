@@ -5,7 +5,6 @@ melon: #F3E3CA
 */
 
 
-
 body {
   /*background-image: url("");*/
   background-position: right;
@@ -27,15 +26,16 @@ body {
 
 
 .loginButton {
-  width: 19em;
-  margin-left: .8em;
+  width: 100%;
+  white-space: normal;
 }
 
 .signUpButton {
-  width: 19em;
+  width: 100%;
   margin-right: 90em;
   height: 2.5em;
   padding-top: 65px;
+  white-space: normal;
 }
 
 .buttonOverride {
