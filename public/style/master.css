@@ -10,6 +10,7 @@ body {
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: aliceblue;
 }
 .Roboto {
   font-family: 'Roboto', sans-serif;
