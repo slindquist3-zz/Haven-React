@@ -20,7 +20,7 @@ body {
 
 .signUpCopy {
   font-family: Helvetica;
-  font-size: 5em;
+  font-size: 4em;
   font-weight: bold;
   text-align: center;
 }
@@ -233,19 +233,20 @@ h1 {
 }
 
 .lightBoxAbout {
-  background-color: white;
+  background-color: #fafcff;
   padding: 1em;
   border-radius: 25px;
-  border-width: 5em;
+  border-width: 1px;
   border: solid;
-  border-color: black;
-  width: 100%
+  border-color: #e7e7e7;
+  width: 100%;
 
 }
 
 .aboutCopy {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: 20px;
 
 
 }

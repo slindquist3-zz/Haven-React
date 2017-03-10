@@ -12,9 +12,7 @@ export default class About extends Component {
           <h3 className="center"></h3>
           <div className="lightBoxAbout">
           <h3 className ="aboutCopy center">
-            <p>Built with minimalism in mind,
-            Haven offers a quieter space to connect.</p>
-            <p>Create and share content free from ads, algorithms, and trends.</p>
+            <p>Haven offers a quieter space to connect inspired by minimalism. Create and share content free from ads, algorithms, and trends.</p>
           </h3>
         </div>
         </Col>
