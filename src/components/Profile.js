@@ -41,48 +41,48 @@ class Profile extends Component {
     this.props.createBoard(this.state.title, this.state.otherUserEmail, this.props.currentUser.id)
     this.setState({title: '', otherUserEmail: ''})
   }
-  //
-  // handleDeleteAccount(event) {
-  //   this.props.deleteUserAccount(this.props.currentUser.id)
-  //
-  // }
-  //
-  // handleEditUserName(event) {
-  //   event.preventDefault();
-  //   this.props.updateName(this.state.name, this.props.currentUser.id)
-  //
-  // }
-  //
-  // handleUserNameChange(event) {
-  //   this.setState({name: event.target.value})
-  // }
-  //
-  // handleEditDropdown(event){
-  //   this.props.postMethod("editing")
-  // }
-  //
-  //
-  // dropdown(method){
-  //   if (method === "editing") {
-  //     return (<div className="text-left">
-  //       <Col lg={11} md={11} sm={11} xs={11}>
-  //         <form className="spaceTopS" onSubmit={this.handleEditUserName.bind(this)}>
-  //           <FormGroup>
-  //             <ControlLabel className= "whiteText">Change Name</ControlLabel>
-  //             <FormControl type="text" onChange={this.handleUserNameChange.bind(this)} />
-  //           </FormGroup>
-  //           <Button type='submit'>Edit</Button>
-  //         </form>
-  //       </Col>
-  //       <Col lg={1} md={1} sm={1} xs={1} className="deleteBoard">
-  //         <Button onClick={this.handleDeleteAccount.bind(this)} bsStyle="danger">Delete Account</Button>
-  //       </Col>
-  //   </div>)
-  //   } else {
-  //     return(<div></div>)
-  //   }
-  //
-  // }
+
+  handleDeleteAccount(event) {
+    this.props.deleteUserAccount(this.props.currentUser.id)
+
+  }
+
+  handleEditUserName(event) {
+    event.preventDefault();
+    this.props.updateName(this.state.name, this.props.currentUser.id)
+
+  }
+
+  handleUserNameChange(event) {
+    this.setState({name: event.target.value})
+  }
+
+  handleEditDropdown(event){
+    this.props.postMethod("editing")
+  }
+
+
+  dropdown(method){
+    if (method === "editing") {
+      return (<div className="text-left">
+        <Col lg={11} md={11} sm={11} xs={11}>
+          <form className="spaceTopS" onSubmit={this.handleEditUserName.bind(this)}>
+            <FormGroup>
+              <ControlLabel className= "whiteText">Change Name</ControlLabel>
+              <FormControl type="text" onChange={this.handleUserNameChange.bind(this)} />
+            </FormGroup>
+            <Button type='submit'>Edit</Button>
+          </form>
+        </Col>
+        <Col lg={1} md={1} sm={1} xs={1} className="deleteBoard">
+          <Button onClick={this.handleDeleteAccount.bind(this)} bsStyle="danger">Delete Account</Button>
+        </Col>
+    </div>)
+    } else {
+      return(<div></div>)
+    }
+
+  }
 
   render(){
     let dropdownEdit = this.dropdown(this.props.editing);
