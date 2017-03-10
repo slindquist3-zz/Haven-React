@@ -45,8 +45,8 @@ body {
 }
 
 .buttonOverrideSpecial {
-  margin-right: 11em;
-  width: 70%;
+  margin-right: 20em;
+  width: 60%;
 }
 
 .boardButtonOverride {
@@ -54,13 +54,13 @@ body {
 }
 
 .createBoard {
-  width: 70%;
+  width: 60%;
 }
 
 
 .centerBoardsUnderCreateBoard {
   margin-right: 1em;
-  width: 19em;
+  width: 50%;
 }
 
 .box {

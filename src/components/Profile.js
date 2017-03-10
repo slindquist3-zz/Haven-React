@@ -110,6 +110,7 @@ class Profile extends Component {
               <FormControl className="center createBoard input-lg" type="text" placeholder="Board Title" onChange={this.handleTitleChange.bind(this)} value={this.state.title} />
               <FormControl className="center createBoard input-lg" type="text" placeholder="Other User's Email" onChange={this.handleOtherUserChange.bind(this)} value={this.state.otherUserEmail} />
             </FormGroup>
+            
             <Button className="buttonOverrideSpecial btn-lg" type="submit">
               New Board
             </Button>
