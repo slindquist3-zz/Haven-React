@@ -88,45 +88,41 @@ class Profile extends Component {
     let dropdownEdit = this.dropdown(this.props.editing);
     let boards = this.props.boards.map((board) => {
       return (
-        <h4><Button className="centerBoardsUnderCreateBoard btn-lg" onClick={this.handleOnClick.bind(this)} value={board.id}>{board.title}</Button></h4>
+        <h4><Button className="boardListButtons unifrom btn-lg" onClick={this.handleOnClick.bind(this)} value={board.id}>{board.title}</Button></h4>
     )
     }
   )
 
 
-    return(<div className="text-center">
+    return(
+          <div>
+            <h1 className="welcome spaceTopSM">Welcome, {this.props.currentUser.name}.</h1>
+            <strong><p className="center spaceTopSM lesserHeadings spaceBottomS">Want to create a new board?</p></strong>
 
-      <Row>
-        <Col lg={12} md={12} sm={12} xs={12}>
-          <h1>Welcome, {this.props.currentUser.name}.</h1>
-        </Col>
-      </Row>
-      <Row className="spaceBottomL">
-      </Row>
-      <Row className="center">
-        <Col lg={6} md={6} sm={6} xs={6} lgOffset={4} mdOffset={4} smOffset={4} xsOffset={4} className="spaceBottomM">
-          <form onSubmit={this.handleCreate.bind(this)} value={this.props.currentUser.id}>
-            <FormGroup className="spaceBottomS">
-              <FormControl className="center createBoard input-lg" type="text" placeholder="Board Title" onChange={this.handleTitleChange.bind(this)} value={this.state.title} />
-              <FormControl className="center createBoard input-lg" type="text" placeholder="Other User's Email" onChange={this.handleOtherUserChange.bind(this)} value={this.state.otherUserEmail} />
-            </FormGroup>
-            
-            <Button className="buttonOverrideSpecial btn-lg" type="submit">
-              New Board
-            </Button>
-          </form>
-        </Col>
-      </Row>
-      <Row>
-        <Col lg={8} md={8} sm={8} xs={8} lgOffset={2} mdOffset={2} smOffset={2} xsOffset={2} className="spaceTopS spaceBottomS">
+              <Row className="form-horizontal">
+                  <form onSubmit={this.handleCreate.bind(this)} value={this.props.currentUser.id}>
+                    <FormGroup>
+                      <FormControl className="unifrom center input-lg" type="text" placeholder="Enter your email." onChange={this.handleOtherUserChange.bind(this)} value={this.state.otherUserEmail} />
+                    </FormGroup>
+                    <FormGroup>
+                      <FormControl className="unifrom center input-lg" type="text" placeholder="Enter other person's email." onChange={this.handleOtherUserChange.bind(this)} value={this.state.otherUserEmail} />
+                    </FormGroup>
+                    <FormGroup>
+                      <Button className="newBoardButton uniform center btn-lg" type="submit">
+                        New Board
+                      </Button>
+                    </FormGroup>
+                    <FormGroup>
 
-          <strong><p className="spaceTopSM lesserHeadings">Your Boards</p></strong>
-            <div>
-                {boards}
+                  <strong><p className="center spaceTopSM lesserHeadings spaceBottomS">Your Boards</p></strong>
+                    <div>
+                        {boards}
+                    </div>
+                    </FormGroup>
+                    </form>
+              </Row>
             </div>
-        </Col>
-      </Row>
-    </div>)
+          )
   }
 }
 

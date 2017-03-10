@@ -25,6 +25,17 @@ body {
   text-align: center;
 }
 
+.uniform {
+  width: 60%;
+}
+
+.welcome {
+  font-family: Helvetica;
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+}
+
 
 .loginButton {
   width: 100%;
@@ -39,15 +50,22 @@ body {
   white-space: normal;
 }
 
+.newBoardButton {
+  width: 100%;
+  margin-right: 90em;
+  white-space: normal;
+}
+
+.boardListButtons {
+  width: 100%;
+}
+
 .buttonOverride {
   width: 19em;
   margin-right: 1em
 }
 
-.buttonOverrideSpecial {
-  margin-right: 20em;
-  width: 60%;
-}
+
 
 .boardButtonOverride {
   width: 19em;
@@ -57,10 +75,14 @@ body {
   width: 60%;
 }
 
+.buttonOverrideSpecial {
+  margin-right: 20em;
+  width: 60%;
+}
+
 
 .centerBoardsUnderCreateBoard {
-  margin-right: 1em;
-  width: 50%;
+  width: 60%;
 }
 
 .box {
@@ -183,8 +205,14 @@ h1 {
   padding-bottom: .1em;
 }
 
+.spaceBottomSM {
+  padding-bottom: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 .spaceBottomS {
-  padding-bottom: 1em;
+  padding-bottom: .5em;
 }
 
 .spaceTopM {
@@ -196,10 +224,28 @@ h1 {
 }
 
 .spaceTopSM {
-  padding-top: .75em;
+  padding-top: .5em;
 
 }
 
 .spaceLeftM {
   padding-left: 1em;
+}
+
+.lightBoxAbout {
+  background-color: white;
+  padding: 1em;
+  border-radius: 25px;
+  border-width: 5em;
+  border: solid;
+  border-color: black;
+  width: 100%
+
+}
+
+.aboutCopy {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+
+
 }
