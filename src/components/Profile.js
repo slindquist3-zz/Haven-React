@@ -103,7 +103,7 @@ class Profile extends Component {
       </Row>
       <Row className="spaceBottomL">
       </Row>
-      <Row>
+      <Row className="center">
         <Col lg={6} md={6} sm={6} xs={6} lgOffset={4} mdOffset={4} smOffset={4} xsOffset={4} className="spaceBottomM">
           <form onSubmit={this.handleCreate.bind(this)} value={this.props.currentUser.id}>
             <FormGroup className="spaceBottomS">
@@ -111,7 +111,7 @@ class Profile extends Component {
               <FormControl className="center createBoard input-lg" type="text" placeholder="Other User's Email" onChange={this.handleOtherUserChange.bind(this)} value={this.state.otherUserEmail} />
             </FormGroup>
             <Button className="buttonOverrideSpecial btn-lg" type="submit">
-              Create New Board
+              New Board
             </Button>
           </form>
         </Col>
